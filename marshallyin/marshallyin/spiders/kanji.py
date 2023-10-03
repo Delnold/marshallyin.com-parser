@@ -104,7 +104,7 @@ class KanjiSpider(scrapy.Spider):
                 "//p[strong[contains(., 'Words of')]]/following::figure[@class='wp-block-table'][1]/table/tbody",
                 response)
             examples = figure_wp_block_table_extractor_kanji(
-                "//p[strong[contains(., 'Example Sentences of')]]/following::figure[@class='wp-block-table'][1]/table/tbody",
+                "//p[strong[contains(., 'Example Sentences')]]/following::figure[@class='wp-block-table'][1]/table/tbody",
                 response)
         if lesson_item["JLPT"] == 2 or lesson_item["JLPT"] == 3 or lesson_item["JLPT"] == 4:
             kanji = re.findall(self.kanji_pattern, lesson_item["info"])

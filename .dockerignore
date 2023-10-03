@@ -1,0 +1,6 @@
+venv
+marshallyin/data/*
+.idea
+.gitignore
+.git
+README.md
